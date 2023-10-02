@@ -20,7 +20,10 @@
 
 <Section>
   <h2 id="text"><span>It's time for a </span><br> Digital Era</h2>
-  <a href="#" id="btn">Login</a>
+  <div class="login">
+    <a href="/loginUser" id="btn">User </a>
+    <a href="/loginAdmin" id="btn">Admin</a>
+  </div>
 </Section>
   
 <div class="sec">
@@ -28,14 +31,12 @@
 
 <script>
   let text = document.getElementById('text');
-  let btn = document.getElementById('btn');
   let header = document.getElementById('header');
   
   window.addEventListener('scroll', function() {
       let value = window.scrollY;
       
-      text.style.top = 65 + value * -.1 + '%';
-      btn.style.marginTop = value * 2 + 'px';
+      text.style.top = 65 + value * -.2 + '%';
       header.style.top = value * .5 + 'px';
   })
 </script>
